@@ -1,12 +1,4 @@
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
-import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
-import { onAuth } from './yourAuthModule'; // Replace with the actual path
 
-const middlewares = [thunk];
-const mockStore = configureMockStore(middlewares);
-const mock = new MockAdapter(axios);
 
 describe('onAuth action creator', () => {
   afterEach(() => {
